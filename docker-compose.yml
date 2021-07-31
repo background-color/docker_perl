@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    restart: always
+    build: .
+    container_name: 'web'
+    working_dir: '/root/'
+    tty: true
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+      - ./cgi-bin:/usr/local/apache2/cgi-bin
+      #configは/usr/local/apache2/conf/
+      #ScriptAlias /cgi-bin/ "/usr/local/apache2/cgi-bin/"
+      #tail -f /usr/local/apache2/logs/access_log
