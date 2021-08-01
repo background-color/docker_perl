@@ -3,8 +3,8 @@ perlアプリケーションを保守する機会があるので
 手元で開発環境すぐ用意できるように
 apache2, cgi(perl) のDocker環境を作る
 
-http://localhost:8080/ で
-html/index.html が表示される
+http://localhost:8080/ で html/index.html が<br>
+http://localhost:8080/cgi-bin/ で cgi-bin/index.cgi が表示される
 
 ### 起動
 ```
